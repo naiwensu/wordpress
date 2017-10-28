@@ -1,0 +1,79 @@
+/*
+Theme Name: Business Consultant
+Theme URI: https://electrathemes.com/wordpress-themes/business-consultant/
+Author: ElectraThemes
+Author URI: https://electrathemes.com/
+Description: Business Consultant is a highly customizable WordPress theme developed primarily for freelancers and business individuals but this can also be used for startups and small, medium sized organization websites. It is based on Twitter bootstrap hence it is mobile responsive and looks awesome in iPad and mobile devices. Logos, colors etc can be easily changed through customizer section.  Step by step documentation and dummy data is here: https://electrathemes.com/documentation/business-consultant/
+Version: 1.1.6
+Tags: two-columns, right-sidebar, full-width-template , flexible-header, custom-colors, custom-header,custom-background, custom-menu, custom-logo, featured-images, footer-widgets, threaded-comments, translation-ready, blog
+License: GNU GENERAL PUBLIC LICENSE, Version 3
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Text Domain: business-consultant
+*/
+input,textarea,select{margin: 0 0 30px;padding: 9px 12px;font-weight: normal;background: transparent;border: 1px solid;box-shadow: none;outline: none; width:100%}
+input:focus,textarea:focus,select:focus{outline: none;border-color: #d80032;box-shadow: none;}
+select {width: 100%;padding: 9px 7px;border-radius: 0;letter-spacing: 1px;cursor: pointer;height: 40px;line-height: 40px;}
+input[type=checkbox], input[type=radio]{float: left;margin: 5px 5px 0 0;}
+input[type="submit"]{border:2px solid #ccc; color: #ffffff; padding: 10px 20px;border: 0;margin: 5px 0;outline: none;letter-spacing: 1px;}
+input[type="submit"]:hover {background: #106391;color: #ffffff;}
+.services-tabs-top li.active:before,.services-tabs-top li:hover:before,
+.services-tabs-left li.active:before,.services-tabs-left li:hover:before{content: "";position: absolute;z-index: -1;box-shadow: 0 2px 3px rgba(81, 100, 207, 0.5);top: 0;bottom: 0px;left: 0px;right: 0px;border-radius: 88px;}
+.services-tabs-top li.active:after,.services-tabs-top li:hover:after,
+.services-tabs-left li.active:after,.services-tabs-left li:hover:after {content: "";background: #fafafa;position: absolute;width: 12px;height: 12px;left: 50%;bottom: -6px;margin-left: -6px;transform: rotate(45deg);box-shadow: inset 3px 3px 3px rgba(81, 100, 207, 0.5), inset 1px 1px 1px rgba(0, 0, 0, 0.3);}
+.services-tabs-left li.active:before,.services-tabs-left li:hover:before{left: inherit;right: 0;border-width: 0;box-shadow: 2px 0px 4px rgba(81, 100, 207, 0.5);background: none !important;}
+.services-tabs-left li:before{background: none !important;}
+.services-tabs-left li.active:after,.services-tabs-left li:hover:after{transform: rotate(315deg);right: -5px;bottom: 35%;left: inherit;}
+.services-tabs-top li {position: relative;display: inline-block;background: #fafafa;padding: 0.6em 0;position: relative;width: 25%;margin: 0 0 0 -4px;border-bottom: 1px solid rgba(0, 0, 0, 0.2);}
+ul#services-tabs.services-tabs-left{border-right: 1px solid rgba(0, 0, 0, 0.2);}
+.services-tabs-top li:hover:before{width: auto;}
+.skill-bars .skill,.skill-bars .count-bar{border-radius: 50px;}
+.skill-bars .count-bar::after{border-width: 0 !important;}
+.skill-bars .count-bar .count {background: #ff0;padding: 0.6em;text-align: left;line-height: 1.5em;border-radius: 50px;top: -48px;right:-8px;}
+.skill-bars .count-bar .count:after {content: ' ';position: absolute;width: 7px;height: 6px;left: auto;right: 14px;bottom: -10px;border: 6px solid;border-color: #ff0 #ff0 transparent transparent;}
+svg#Capa_1 {transform: rotate(30deg) translate(5px);}
+/* Menu */
+#cssmenu .offside .current_page_item a{ border-color: #106391; }
+.offside .menu-item {position: relative;margin: 1em;}
+.offside a {position: relative;display: block;text-align: center;color: #b5b5b5;-webkit-transition: color 0.6s;transition: color 0.6s;}
+.offside a:hover,
+.offside a:focus {color: #929292;}
+.offside .menu-item.current_page_item a,.offside .menu-item:hover a {color: #d94f5c;}
+.offside .menu-item::before,
+.offside .menu-item::after,
+.offside a::before,
+.offside a::after {content: '';position: absolute;background: #b5b5b5;-webkit-transition: -webkit-transform 0.25s, background .75s;transition: transform 0.25s, background .75s;-webkit-transition-timing-function: cubic-bezier(1, 0.53, 0.79, 0.68);transition-timing-function: cubic-bezier(1, 0.53, 0.79, 0.68);}
+/* left and right line */
+.offside .menu-item::before,
+.offside .menu-item::after {top: 0;width: 2px;height: 100%;-webkit-transform: scale3d(1, 0, 1);transform: scale3d(1, 0, 1);}
+/* left line */
+.offside .menu-item::before {left: 0;-webkit-transform-origin: 0% 0%;transform-origin: 0% 0%;}
+/* right line */
+.offside .menu-item::after {right: 0;-webkit-transform-origin: 50% 0%;transform-origin: 50% 0%;}
+/* top and bottom line */
+.offside a::before,
+.offside a::after {left: 0;width: 100%;height: 2px;-webkit-transform: scale3d(0, 1, 1);transform: scale3d(0, 1, 1);}
+/* top line */
+.offside a::before {top: 0;-webkit-transform-origin: 0 50%;transform-origin: 0 50%;}
+/* bottom line */
+.offside a::after {bottom: 0;-webkit-transform-origin: 0% 50%;transform-origin: 0% 50%;}
+/* Delays (first reverse, then current) */
+/* These rules can be simplified, but let's keep it for better readability */
+/* bottom line */
+.offside .menu-item a::after {-webkit-transition-delay: 0s;transition-delay: 0s;}
+.offside .menu-item.current_page_item a::after,.offside .menu-item:hover a::after {-webkit-transition-delay: 0.25s;transition-delay: 0.25s;}
+/* left line */
+.offside .menu-item::before {-webkit-transition-delay: 0.25s;transition-delay: 0.25s;}
+.offside .menu-item.current_page_item::before,
+.offside .menu-item:hover::before {-webkit-transition-delay: 0s;transition-delay: 0s;}
+/* top line */
+.offside .menu-item a::before {-webkit-transition-delay: 0.25s;transition-delay: 0.25s;}
+.offside .menu-item.current_page_item a::before,
+.offside .menu-item:hover a::before {-webkit-transition-delay: 0s;transition-delay: 0s;}
+/* right line */
+.offside .menu-item.current_page_item::after,
+.offside .menu-item:hover::after {-webkit-transition-delay: 0.25s;transition-delay: 0.25s;}
+.offside .menu-item.current_page_item::before,.offside .menu-item.current_page_item::after,
+.offside .menu-item.current_page_item a::before,.offside .menu-item.current_page_item a::after,
+.offside .menu-item:hover::before,.offside .menu-item:hover::after,.offside .menu-item:hover a::before,
+.offside .menu-item:hover a::after {-webkit-transform: scale3d(1, 1, 1);transform: scale3d(1, 1, 1);background: #106391;}
+/* End: menu Styles */
